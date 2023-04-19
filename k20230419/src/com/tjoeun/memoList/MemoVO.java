@@ -8,7 +8,7 @@ import java.util.Date;
 public class MemoVO {
 
 		
-	public static int count; 	//	글번호 자동 증가에 사용할 정격 필드 count
+	public static int count; 	//	글번호 자동 증가에 사용할 정적 필드 count
 	private static int idx;  	//	자동으로 1씩 증가하는 글번호
 	private String name; 		//	작성자 이름
 	private String password;	//	비밀번호
