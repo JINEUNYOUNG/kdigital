@@ -22,6 +22,7 @@ public class MemoMain {
 //		System.out.println(memo3);
 //		System.out.println(memo4);
 		
+//		▼ 메뉴창 띄우기 
 		Scanner scanner = new Scanner(System.in);
 		int menu = 0;
 		while (menu != 5) {  //5가 아닌 동안만 돌린다.
@@ -38,8 +39,9 @@ public class MemoMain {
 			System.out.println("메뉴는 1~5 사이로 입력하세요.");
 			}
 			
-	//		여기를 지나왔으면 menu에는 1~5사이의 정수가 입력되었다는 의미.
+//  		▲ 여기를 지나왔으면 menu에는 1~5사이의 정수가 입력되었다는 의미.
 			
+//			▼ 번호에 따라서 메서드를 실행한다. 
 			switch(menu) {
 				case 1:
 					insert(); 
@@ -64,7 +66,9 @@ public class MemoMain {
 			
 		}
 		System.out.println("!프로그램을 종료합니다!");}
-		
+//				▲ 5면 종료한다 		
+	
+	
 //		Q. 수정할 글번호를 입력받아 1건을 얻어와 표시하고 비밀번호와 수정할 내용을 입력받아
 //	  	memoList라는 ArrayList에 저장된 글 1건을 수정한다.
 	private static void update() {

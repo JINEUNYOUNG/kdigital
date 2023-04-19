@@ -13,13 +13,15 @@ public class MemoList {
 	public void setMemoList(ArrayList<MemoVO> memoList) {
 		this.memoList = memoList;
 	}
+//	▲ 다른데서도 쓸수있게 게터세터
 	
+//	▼ 제대로 override를 했는지 check가 가능하다.
 	@Override
 	public String toString() {
 		String str = "";
-//			▼ 저장된 메모가 없으면 없다고 출력
 		if (memoList.size()==0) {
 			str += "저장된 메모가 없습니다.\n";
+//			▲ 저장된 메모가 없으면 없다고 출력
 //			▼ 저장된 메모가 있으면 메모 목록을 마지막 메모부터 출력한다.
 		} else {
 			for (int i=0; i<memoList.size(); i++) {
@@ -30,15 +32,17 @@ public class MemoList {
 		return str;
 		}	
 	
-//	 ▼ memoMain클래스에서 입력받은 내용을 memoList라는 arrayList에서 받아 리스트에 추가
+//	 ▼ memoMain클래스에서 입력받은 내용을 MemoList라는 arrayList에서 받아(vo) 리스트에 추가
 	public void addMemo(MemoVO vo) {
 		memoList.add(vo);  
 	}
+//	▼ memomain 클래스에서 수정/삭제할(idx 글번호를 넘겨받고 memolist라는 arraylist에 저장된 메모 
+//	  1건을 받아 리턴하는 메소드
 	public MemoVO selectMemo(int idx) {
 		try { 									//예외처리
 			return memoList.get(idx-1);
 		} catch (Exception e) {					//exception 오류가 뜨면 널값 (catch안에 넣어줄것)
-			return null;
+			return null;	//	←←←←←←← try랑 catch 각각 return 필요함! 
 		}
 	}
 	public void deleteMemo(int idx) {
