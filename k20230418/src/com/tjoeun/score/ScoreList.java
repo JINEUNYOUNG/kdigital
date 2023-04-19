@@ -8,7 +8,7 @@ public class ScoreList {
 		
 		
 	}
-
+// ▼ getter setter 
 
 	public ArrayList<ScoreVO> getScoreList() {
 		return scoreList;
