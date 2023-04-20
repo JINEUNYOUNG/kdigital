@@ -37,8 +37,9 @@ public class TextFileWriteTest {
 			printWriter.write(str + "\n");   //\n을 넣었음에도 불구하고 줄바꿈이 안된다면 \r\n
 			
 		}	
-		}
-		System.out.println("텍스트파일로 저장완료");
+		
+			System.out.println("텍스트파일로 저장완료");
+		
 		catch (FileNotFoundException e) {
 //			e.printStackTrace();
 			System.out.println("파일 경로가 잘못되었거나 디스크에 파일이 존재하지 않습니다.");
