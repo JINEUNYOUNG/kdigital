@@ -27,6 +27,15 @@ class Date { //날짜를 기억하는 클래스
 		
 	}
 
+
+	public Date(int year, int month, int day) {
+		super();
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}
+
+
 	@Override
 	public String toString() {
 		return String.format("%4d년 %02d월 %02d일", year, month, day);
@@ -73,11 +82,46 @@ class Time { //시간을 기억하는 클래스
 	}
 	
 }
+class Now {
+//	★★★★클래스 포함★★★★이란 클래스의 필드로 다른 클래스 객체를 선언해서 사용하는 것 
+	private Date date;   //우리가만든date
+	private Time time;	//우리가만든time
+// 기본 생성자가 실행되면 현재 날짜와 시간으로 초기화 시킨다.
+	public Now() {
+		date = new Date();
+		time = new Time();
+	}
+	
+	@Override
+	public String toString() {
+		return "Now [date=" + date + ", time=" + time + "]";
+	}
+	
+	
+//	날짜와 시간 데이터를 넘겨받아 초기화시키는 생성자를 만든다.
+ 
+	public Now(Date date, Time time) {
+		super();
+		this.date = date;
+		this.time = time;
+	}
 
+	public Now(int year, int month, int day, int hour, int minute, int second) {
+	date = new Date(year, month, day);
+	time = new Time(hour,minute,second);
+	}
+	
+//	년, 월, 일, 시, 분, 초를 넘겨받아 초기화시키는 생성자를 만든다.
+	
+	
+	
+	
+}
 
 // ▼ date와 time 이라는 클래스를 상속받아 now라는 클래스를 만들겠다. 다중상속은 안됨요!!!!!!!
 //class Now extends Date,Time{ } <<<에러!!!!!!!!!!!>>>
 //	다중상속 효과를 내기 위해 클래스 포함 또는 인터페이스를 사용한다.
+//▼ 출력을 하려면 main메소드에서
 
 public class ClassincludeTest {
 	public static void main(String[] args) {
@@ -87,6 +131,16 @@ public class ClassincludeTest {
 		
 		Time time = new Time();
 		System.out.println(time);
+		
+		Now now = new Now();
+		System.out.println(now);
+		
+		Now now2 = new Now(date, time);
+		System.out.println(now2);
+		
+		Now now3 = new Now(2023,2,4,7,30,29);
+		System.out.println(now3);
+				
 		
 	}
 }
