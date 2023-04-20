@@ -46,6 +46,31 @@ class Time { //시간을 기억하는 클래스
 	private int hour;
 	private int minute;
 	private int second;
+
+	public Time() {
+//		java.util.Date date = new java.util.Date();
+//		year = date.getYear() + 1900;
+//		month = date.getMonth() + 1;
+//		day = date.getDate();
+//	    ▼ 위 대신 Calendar를 쓰면 간편하다.
+		Calendar calendar = Calendar.getInstance();
+		hour = calendar.get(Calendar.HOUR_OF_DAY);
+		minute = calendar.get(Calendar.MINUTE);
+		second = calendar.get(Calendar.SECOND);
+		
+	}
+
+	@Override
+	public String toString() {
+		return String.format("%02d:%02d:%02d",hour,minute,second);
+				}
+
+	public Time(int hour, int minute, int second) {
+		super();
+		this.hour = hour;
+		this.minute = minute;
+		this.second = second;
+	}
 	
 }
 
@@ -59,6 +84,9 @@ public class ClassincludeTest {
 		
 		Date date = new Date();
 		System.out.println(date);
+		
+		Time time = new Time();
+		System.out.println(time);
 		
 	}
 }
