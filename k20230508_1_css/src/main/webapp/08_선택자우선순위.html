@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자우선순위</title>
+<style type="text/css">
+
+div {   /* !important 무한점  */
+color:yellowgreen !important ;
+font-weight: bold;
+}
+
+#color_purple {   /* 아이디 100점 */
+color:purple;
+}
+
+.color_green {   /* 클래스 10점 */
+color:green;
+}
+
+div {  /* 태그 1점 */
+	color: yellow;
+}
+
+* {  /* 전체 0점 */
+	color: blue;
+}
+
+body {   /* 상속 0점 */
+	color: violet;
+}
+</style>
+</head>
+<body>
+	<div class="color_green" id="color_purple" style="color:blue;">hello world!</div><!-- 인라인 1000점 -->
+</body>
+</html>

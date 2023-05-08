@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>단위2</title>
+<style type="text/css">
+html {
+	font-size: 10px;
+}
+
+body * {
+	border: 2px solid red;
+}
+
+.container {
+	font-size: 10px;
+	/* 	width: 600px; */
+	width: 60em; /* 폰트대비60배 */
+}
+
+.parent {
+	font-size: 2em; /* 20px */
+	width: 15em; /* 300px */
+}
+
+.child {
+	font-size: 2em; /* 40px */
+	width: 3.75em; /* 150px */
+}
+
+.child2 {
+	font-size: 4em; /* 80px */
+	width: 0.87em;  /* 75px */
+}
+</style>
+
+</head>
+<body>
+
+	<div class="container">
+		Container
+		<div class="parent">
+			parent
+			<div class="child">child</div>
+			<div class="child2">child2</div>
+		</div>
+	</div>
+
+</body>
+</html>

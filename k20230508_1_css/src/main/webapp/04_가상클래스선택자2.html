@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가상 클래스 선택자</title>
+
+<style type="text/css">
+
+li:nth-child(n+2){
+color:red;
+}
+
+.fruits4 li:nth-child(2){
+color:blue;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<ul class="fruits">
+<li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+</ul>
+
+<hr/>
+
+<ul class="fruits4">
+<div>a</div>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<span>e</span>
+</ul>
+
+</body>
+</html>

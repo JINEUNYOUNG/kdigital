@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가상 클래스 선택자</title>
+
+<style type="text/css">
+ 
+ 
+a:hover {
+color:lime;
+font-weight: bold;
+ }
+
+.box1 {
+width: 100px;
+height: 100px;
+background-color: mediumaquamarine;
+transition-duration: 1s;
+}
+
+.box1:hover {
+width:200px;
+background-color: aqua;}
+
+.box2 {
+width: 100px;
+height: 100px;
+background-color: fuchsia;
+background-color: fuchsia;
+transition-duration: 1s;
+}
+.box2:active {
+background-color:lime;
+ }
+ 
+input {
+background-color:teal;
+	width:100px;
+	outline:3px solid blue;
+	border:1px solid yellow;
+	border-bottom: 2px solid black;
+	padding:5px 10px;
+}
+
+input:focus {
+width:200px;
+background-color: yellowgreen;
+border:3px solid lime;
+transition-duration: 1s;
+}
+
+.fruits > li:first-child {
+font-weight: bold;
+color: gray;
+}
+.fruits > li:last-child {
+font-weight: bold;
+color: red;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="http://www.naver.com">naver</a>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<input type="text">
+<input type="button">
+<ul class="fruits">
+<li>a</li>
+<li>b</li>
+<li>c</li>
+<li>d</li>
+<li>e</li>
+</ul>
+
+</body>
+</html>

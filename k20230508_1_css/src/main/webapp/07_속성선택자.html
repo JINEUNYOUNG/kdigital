@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성선택자</title>
+
+<style type="text/css">
+
+[disabled] {
+opacity:0.2
+}
+
+[class^="btn"] {
+color:red;
+}
+[class$="success"] {
+color:blue;
+}
+
+</style>
+
+</head>
+<body>
+
+<input type="text" value="홍길동">
+<input type="password" value="1234">
+<input type="text" value="비활성화한텍스트" disabled="disabled"><br/>
+
+<button class="btn-success" type="button">Success</button><br/>
+<button class="btn-danger" type="button">Danger</button><br/>
+<button class="button">Normal</button>
+
+
+</body>
+</html>
