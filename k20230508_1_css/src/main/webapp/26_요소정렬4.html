@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.parent {
+	width: 400px;
+	height: 300px;
+	border: 4px dotted #B0A4A4;;
+	position: static;
+	bottom: 450px;
+	right: 100px;
+}
+
+.child1 {
+	width: 100px;
+	height: 150px;
+	background-color: #F2F7A1;
+	border: 4px solid #643A6B;
+	font-size: 40px;
+	display: flex; justify-content : center;
+	align-items: center;
+	border-radius: 20px;
+	position: absolute;
+	justify-content: center; align-items : center; border-radius : 20px;
+	position : absolute;
+	top: 50px;
+	left: 100px;
+}
+
+.child2 {
+	width: 100px;
+	height: 150px;
+	border: 4px solid #5F264A;
+	background-color: #6D67E4;
+	font-size: 40px;
+	display: flex; justify-content : center;
+	align-items: center;
+	border-radius: 20px;
+	position: relative;
+	bottom: 50px;
+	justify-content: center; align-items : center; border-radius : 20px;
+	position : absolute; 
+	bottom : 50px;
+	right: 100px;
+}
+</style>
+</head>
+<body>
+
+	<div class="parent">
+		<div class="child1">123</div>
+		<div class="child2">456</div>
+	</div>
+
+</body>
+</html>

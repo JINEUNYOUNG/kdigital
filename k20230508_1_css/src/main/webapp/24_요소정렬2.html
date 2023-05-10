@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.box1 {
+	width: 150px;
+	height: 100px;
+	background-color: #5C469C;
+	color: #D4ADFC;
+	font-size: 50pt;
+	float: left;
+	margin: 10px;
+}
+
+.box2 {
+	width: 150px;
+	height: 100px;
+	background-color: #FFD95A;
+	color: #4C3D3D;
+	font-size: 50pt;
+	/* clear:left; */
+	clear: both;
+	margin: 10px;
+}
+
+.box3 {
+	width: 150px;
+	height: 100px;
+	background-color: #5C469C;
+	color: #D4ADFC;
+	font-size: 50pt;
+	float: right;
+	margin: 10px;
+}
+
+.box4 {
+	width: 150px;
+	height: 100px;
+	background-color: #FFD95A;
+	color: #4C3D3D;
+	font-size: 50pt;
+	clear: both;
+	/* clear:both; */
+	margin: 10px;
+}
+
+.float-box1 {
+	width: 150px;
+	height: 100px;
+	background-color: #ACB1D6;
+	color: white;
+	font-size: 50pt;
+	float: left;
+	margin: 10px;
+}
+
+.new-box1 {
+	width: 700px;
+	height: 100px;
+	background-color: #643A6B;
+}
+
+.clearfix1 {
+overflow: hidden;}
+
+.float-box2 {
+	width: 150px;
+	height: 100px;
+	background-color: #ACB1D6;
+	color: white;
+	font-size: 50pt;
+	float: right;
+	margin: 10px;
+}
+.new-box2 {
+	width: 700px;
+	height: 100px;
+	background-color: #8294C4;
+	float:right;
+	
+}
+.clearfix2::after {
+content:"";
+clear:both;
+display:block;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="box1">1</div>
+	<div class="box1">2</div>
+	<div class="box1">3</div>
+	<div class="box2">4</div>
+
+	<div class="box3">1</div>
+	<div class="box3">2</div>
+	<div class="box3">3</div>
+	<div class="box4">4</div>
+
+	<div class="clearfix1">
+		<div class="float-box1">1</div>
+		<div class="float-box1">2</div>
+		<div class="float-box1">3</div>
+		<div class="float-box1">4</div>
+	</div>
+	<div class="new-box1"></div>
+	
+	<div class="clearfix2">
+		<div class="float-box2">1</div>
+		<div class="float-box2">2</div>
+		<div class="float-box2">3</div>
+		<div class="float-box2">4</div>
+	</div>
+	<div class="new-box2"></div>
+
+</body>
+</html>

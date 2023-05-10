@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>요소정렬-position(absolute)</title>
+<style type="text/css">
+.grand-parent {
+	width: 400px;
+	height: 300px;
+	background-color: #F2F7A1;
+	border: 4px solid #46C2CB;
+	padding: 30px 100px 100px 30px;
+	position: static;
+	bottom: 50px;
+	right: 100px;
+}
+
+.parent {
+	width: 250px;
+	height: 200px;
+	border: 4px solid #46C2CB;
+	position: static;
+	top: 30px;
+	left: 100px;
+}
+
+.child {
+	width: 120px;
+	height: 30px;
+	border: 4px dotted #453C67;
+	background-color: white;
+}
+
+.absolute {
+	position: absolute;
+	bottom: 50px;
+	right:10px;
+}
+</style>
+</head>
+<body>
+	<div class="grand-parent">
+		<div class="parent">
+			<div class="child">123</div>
+			<div class="child absolute">456</div>
+			<div class="child">789</div>
+		</div>
+	</div>
+
+</body>
+</html>
