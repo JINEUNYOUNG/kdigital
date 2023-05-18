@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>부트스트랩 웹 페이지</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/bootstrap.css" />
+
+<style type="text/css">
+.jumbotron {
+	background-image :  #EEEEEE;
+	font-family:나눔스퀘어 네오;
+	background-size: cover;
+	color: black;
+}
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    
+		font-family:나눔스퀘어 네오;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+.dropdown-menu {
+	font-family:나눔스퀘어 네오;
+}
+</style>
+
+<script type="text/javascript" src="./js/jquery-3.7.0.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+
+
+<header>
+	<nav class="container navbar navbar-light" style="background-color: #F1F6F9; font-family:나눔스퀘어 네오">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#nav-toggle"
+					aria-expanded="false">
+					<span class="sr-only"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index5.html">날로 먹는 코딩</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="./index5.html">소개</a>
+					</li>
+					<li>
+						<a href="./instructor.html">강사진</a>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false"> 강의<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="./lecture.html?lectureName=C">C언어</a> <a href="./lecture.html?lectureName=Java">Java</a> <a href="./lecture.html?lectureName=Android">Android</a>
+							</li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input class="form-control" type="text"
+							placeholder="검색할 내용을 입력하세요" />
+					</div>
+					<button class="btn btn-primary" type="button">검색</button>
+				</form>
+				<div class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false"> 접속하기<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="./loginForm.html" >로그인</a></li>
+							<li><a href="./registerForm.html">회원가입</a></li>
+						</ul></li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+</header>
+
+<!-- 로그인 -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">로그인</h1>
+            <div class="account-wall">
+                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                    alt="">
+                <form class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                   로그인</button>
+                <label class="checkbox pull-left">
+                    <input type="checkbox" value="remember-me">
+                    기억하기
+                </label>
+                <a href="#" class="pull-right need-help">도움? </a><span class="clearfix"></span>
+                </form>
+            </div>
+            <a href="./registerForm.html" class="text-center new-account">회원가입 </a>
+        </div><br/>
+    </div>
+</div>
+	
+<footer>
+		<div class="container" style="
+		background-image:linear-gradient(#F6F1F1, #F1F6F9);
+		font-family:나눔스퀘어 네오;
+		
+		"><br/>
+			<div class="row">
+				<div class="col-sm-2" style="text-align: center">
+					<h5>Copyright &copy;</h5>
+					<h6>진은영(Jin eun young)</h6>				
+				</div>
+				<div class="col-sm-4">
+					<h5>대표자 소개
+					</h5>
+					<h6>
+					저는 날로 먹는 코딩의 대표입니다.</br>
+					부트 스트랩을 사용해 웹 디자인을 하고 있습니다.</h6>
+					</div>
+				
+			<div class="col-sm-2" style="text-align: center;">
+			<h5>내비게이션</h5>
+				<div class="list-group">
+					<a href="./index5.html" class="list-group-item">소개</a>
+					<a href="./instructor.html" class="list-group-item">강사진</a>
+					<a href="./lecture.html" class="list-group-item">강의</a>
+				</div>
+				</div>
+			<div class="col-sm-2" style="text-align: center;">
+			<h5>SNS</h5>
+				<div class="list-group">
+					<a href="#" class="list-group-item">유튜브</a>
+					<a href="#" class="list-group-item">페이스북</a>
+					<a href="#" class="list-group-item">인스타</a>
+			</div>
+		</div>
+		<div class="col=sm-2" style="text-align:center;">
+		<h5>
+		<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;</h5></div>
+</div>
+</div>
+
+	</footer>
+
+
+
+</body>
+</html>

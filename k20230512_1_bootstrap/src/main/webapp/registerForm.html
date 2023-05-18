@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>부트스트랩 웹 페이지</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/bootstrap.css" />
+
+<style type="text/css">
+.jumbotron {
+	background-image :  #EEEEEE;
+	font-family:나눔스퀘어 네오;
+	background-size: cover;
+	color: black;
+}
+
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	background-color: #d3d3d3;
+ 	font-family:나눔스퀘어 네오;
+
+}
+
+.main{
+ 	margin-top: 70px;
+}
+
+h1.title { 
+	font-size: 50px;	font-family:나눔스퀘어 네오;
+
+	font-weight: 400; 
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 330px;
+    padding: 40px 40px;
+
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+</style>
+
+<script type="text/javascript" src="./js/jquery-3.7.0.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	
+	
+</head>
+<body>
+
+
+<header>
+	<nav class="container navbar navbar-light" style="background-color: #F1F6F9; font-family:나눔스퀘어 네오">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#nav-toggle"
+					aria-expanded="false">
+					<span class="sr-only"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index5.html">날로 먹는 코딩</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="./index5.html">소개</a>
+					</li>
+					<li>
+						<a href="./instructor.html">강사진</a>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false"> 강의<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="./lecture.html?lectureName=C">C언어</a> <a href="./lecture.html?lectureName=Java">Java</a> <a href="./lecture.html?lectureName=Android">Android</a>
+							</li>
+						</ul></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<div class="form-group">
+						<input class="form-control" type="text"
+							placeholder="검색할 내용을 입력하세요" />
+					</div>
+					<button class="btn btn-primary" type="button">검색</button>
+				</form>
+				<div class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false"> 접속하기<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="./loginForm.html">로그인</a></li>
+							<li><a href="./registerForm.html">회원가입</a></li>
+						</ul></li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+</header>
+	
+	
+		<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<hr />
+	               	</div>
+	            </div> 
+				<div class="main-login main-center">
+					<form class="form-horizontal" method="post" action="#">
+						
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">이름</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">이메일</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">닉네임</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">비밀번호</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">비밀번호재입력</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+						</div>
+						<div class="login-register">
+				            <a href="index.php">로그인</a>
+				         </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+	
+<footer>
+		<div class="container" style="
+		background-image:linear-gradient(#F6F1F1, #F1F6F9);
+		font-family:나눔스퀘어 네오;
+		
+		">
+			<div class="row">
+				<div class="col-sm-2" style="text-align: center">
+					<h5>Copyright &copy;</h5>
+					<h6>진은영(Jin eun young)</h6>				
+				</div>
+				<div class="col-sm-4">
+					<h5>대표자 소개
+					</h5>
+					<h6>
+					저는 날로 먹는 코딩의 대표입니다.</br>
+					부트 스트랩을 사용해 웹 디자인을 하고 있습니다.</h6>
+					</div>
+				
+			<div class="col-sm-2" style="text-align: center;">
+			<h5>내비게이션</h5>
+				<div class="list-group">
+					<a href="./index5.html" class="list-group-item">소개</a>
+					<a href="./instructor.html" class="list-group-item">강사진</a>
+					<a href="./lecture.html" class="list-group-item">강의</a>
+				</div>
+				</div>
+			<div class="col-sm-2" style="text-align: center;">
+			<h5>SNS</h5>
+				<div class="list-group">
+					<a href="#" class="list-group-item">유튜브</a>
+					<a href="#" class="list-group-item">페이스북</a>
+					<a href="#" class="list-group-item">인스타</a>
+					<a href="#" class="list-group-item">허어</a>
+			</div>
+		</div>
+		<div class="col=sm-2" style="text-align:center;">
+		<h5>
+		<span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;</h5></div>
+</div>
+</div>
+
+	</footer>
+
+
+
+</body>
+</html>
